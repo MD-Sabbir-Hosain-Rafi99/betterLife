@@ -1,29 +1,16 @@
-/* All Global Css Start */
-* {
-    margin: 0;
-    padding: 0;
+
+
+
+/* Button Css */
+.buy-btn {
+  animation: shake 2s infinite;
+  -webkit-animation: shake 2s infinite;
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
+@keyframes shake {
+  0%, 90%, 100% { transform: translateX(0); }
+  92% { transform: translateX(-3px); }
+  94% { transform: translateX(3px); }
+  96% { transform: translateX(-3px); }
+  98% { transform: translateX(3px); }
 }
-
-/* ul,
-ol {
-    list-style-type: none;
-} */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-    line-height: 0.8;
-}
-
-/* All Global Css End */

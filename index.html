@@ -19,7 +19,7 @@
     <!-- Tailwind + ddaisyUI -->
 
     <!-- Css File Link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -62,8 +62,7 @@
         <div class="hero-content flex flex-col lg:flex-row items-center gap-8">
 
             <!-- Product Image -->
-            <img src="assets/WhatsApp Image 2025-09-15 at 22.04.14_badaa6ac.jpg"
-                class="w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl" />
+            <img src="assets/product.jpeg" class="w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl" />
 
             <!-- Product Details -->
             <div class="text-center lg:text-left space-y-4">
@@ -75,7 +74,7 @@
                 </p>
 
                 <p class="text-xl sm:text-2xl mb-3 font-bold">
-                    🔥 আজ অর্ডার করলে ডিসকাউন্টে পাচ্ছেন মাত্র <span class="text-green-500">১২০০</span> টাকায়!
+                    🔥 আজ অর্ডার করলে ডিসকাউন্টে পাচ্ছেন মাত্র <span class="text-green-500">১০০০</span> টাকায়!
                 </p>
 
                 <a href="#orderCart"><button class="btn btn-block bg-red-600 text-white py-10 sm:py-6 text-3xl">
@@ -149,7 +148,7 @@
                     class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg">
                 <div class="flex-1">
                     <h3 class="font-semibold text-base sm:text-lg">কিউটন ক্যাপসুল</h3>
-                    <p class="text-gray-600 text-sm sm:text-base">মূল্য : <span id="price">1200</span> BDT</p>
+                    <p class="text-gray-600 text-sm sm:text-base">মূল্য : <span id="price">1000</span> BDT</p>
 
                     <!-- Quantity Control -->
                     <div class="flex items-center mt-2">
@@ -165,7 +164,7 @@
 
             <!-- Total Price -->
             <div class="mb-5">
-                <p class="font-semibold text-lg text-center">Total: <span id="totalPrice">1200</span> BDT</p>
+                <p class="font-semibold text-lg text-center">Total: <span id="totalPrice">1000</span> BDT</p>
             </div>
 
             <!-- User Details -->
@@ -188,10 +187,28 @@
             </div>
 
             <!-- Buy Button -->
-            <button id="buyBtn"
-                class="w-full bg-black text-white py-2 rounded hover:bg-indigo-600 transition text-sm sm:text-base">
-                <i class="fa-solid fa-truck-fast"></i> COMPLETE ORDER
+            <button id="buyBtn" class="buy-btn w-full bg-black text-white py-2 rounded text-sm sm:text-base">
+                <i class="fa-solid fa-truck-fast"></i> অর্ডার নিশ্চিত করতে ক্লিক করুন
             </button>
+
+
+            <!-- Modal -->
+            <dialog id="orderModal" class="modal">
+                <div class="modal-box">
+                    <h3 id="modalTitle" class="font-bold text-lg">Confirm Your Order</h3>
+
+                    <div id="modalBody" class="py-4 text-sm leading-6"></div>
+
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button id="cancelBtn" class="btn">Cancel</button>
+                        </form>
+
+                        <button id="confirmBtn" class="btn btn-primary">Confirm & Submit</button>
+                    </div>
+                </div>
+            </dialog>
+
         </section>
     </section>
 
@@ -205,6 +222,7 @@
                 <br />
                 অর্ডার করতে কল করুন: <a href="tel:01973085033" class="text-blue-500" href=""> 📞 01973085033</a>
             </p>
+            <p class="text-sm">&copy; 2025 Better Life. All Rights Reserved.</p>
         </aside>
     </footer>
 
