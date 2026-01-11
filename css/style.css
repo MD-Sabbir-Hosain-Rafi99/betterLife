@@ -8,7 +8,9 @@
 }
 
 @keyframes shake {
-  0%, 90%, 100% { transform: translateX(0); }
+
+  0%, 90%, 100% { transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); }
+
   92% { transform: translateX(-3px); }
   94% { transform: translateX(3px); }
   96% { transform: translateX(-3px); }
